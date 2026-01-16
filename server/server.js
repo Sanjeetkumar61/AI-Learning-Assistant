@@ -23,6 +23,20 @@ const __dirname = path.dirname(__filename);
 // Initilize express app
 const app = express();
 
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:3000",
+      "https://ai-learning-assistant-frontend.vercel.app/" // 👈 apna frontend URL
+    ],
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"]
+  })
+);
+
+
 // Connect to MongoDB
 connectDB();
 
