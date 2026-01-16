@@ -235,7 +235,7 @@ const FlashcardManager = ({ documentId }) => {
                     <button
                         onClick={handleGenerateFlashcards}
                         disabled={generating}
-                        className="group inline-flex items-center gap-2 px-6 h-12 bg-linear-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold text-sm rounded-xl transition-all duration-200 shadow-lg shadow-emerald-500/25 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100    "
+                        className="group inline-flex items-center gap-2 px-6 h-12 bg-linear-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold text-sm rounded-xl transition-all duration-200 shadow-lg shadow-emerald-500/25 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100 cursor-pointer"
                     >
                         {generating ? (
                             <>
@@ -279,7 +279,7 @@ const FlashcardManager = ({ documentId }) => {
                             transition-all duration-200
                             shadow-lg shadow-emerald-500/25
                             active:scale-95
-                            disabled:opacity-50"
+                            disabled:opacity-50 cursor-pointer"
                     >
                         {generating ? (
                             <>
