@@ -36,6 +36,14 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "AI Learning Assistant Backend is running 🚀"
+  });
+});
+
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
