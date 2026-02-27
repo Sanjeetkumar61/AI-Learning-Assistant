@@ -26,7 +26,6 @@ This project is designed to demonstrate:
 - 🌐 Modern frontend + backend communication  
 - 🚀 Realtime user interactions
 
----
 
 ## 🚀 Features
 
