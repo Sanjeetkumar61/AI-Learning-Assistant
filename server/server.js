@@ -43,7 +43,8 @@ app.use(express.urlencoded({ extended: true }));
 
 
 // Static folter for uploads
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+// app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/uploads', express.static(path.join(process.cwd(), 'uploads')));
 
 // Routes
 app.use('/api/auth', authRoutes);
